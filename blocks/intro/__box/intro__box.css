@@ -1,0 +1,35 @@
+.intro__box {
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1023px) {
+    .intro__box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro__box {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .intro__box {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .intro__box {
+        max-width: 100%;
+        padding: 0;
+    }
+}

@@ -165,23 +165,24 @@
     margin: 0 auto 80px auto;
     display: grid;
     grid-template-columns: 460px 1fr;
-    grid-template-rows: 1fr 460px;
+    /*grid-template-rows: 1fr 460px;*/
     column-gap: 40px;
     row-gap: 48px;
+    justify-content: flex-start;
 }
 
 .place:last-of-type {
     margin: 0 auto 0 auto;
 }
 
-.title-container {
+/*.title-container {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
     margin: 0 0  48px 0;
-}
+}*/
 
 .place__title {
     font-family: 'Inter';
@@ -331,9 +332,9 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .header {
-    max-width: 928px;
+    max-width: 90%;
     margin: 0 auto 48px auto;
   }
 
@@ -375,12 +376,13 @@
     max-width: 928px;
     display: grid;
     grid-template-columns: 440px 1fr;
-    grid-template-rows: 1fr 440px;
+    /*grid-template-rows: 1fr 440px;*/
     column-gap: 32px;
+    row-gap: 48px;
   }
 
   .place__image {
-    max-width: 440px;
+    max-width: 100%;
   }
 
   .place__paragraphs {
@@ -392,24 +394,24 @@
   }
 
   .footer {
-    max-width: 928px;
+    max-width: 90%;
   }
 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1023px) {
     .header {
-        max-width: 720px;
+        max-width: 90%;
         margin: 0 auto 48px auto;
       }
 
     .lead {
-       max-width: 768px;
+       max-width: 100%;
        margin: 0 auto 88px auto;
     }  
 
     .lead__image {
-        max-width: 768px;
+        max-width: 100%;
       }
 
     .lead__caption {
@@ -417,42 +419,46 @@
     }
 
     .intro {
-        max-width: 720px;
-        margin: 0 auto 88px auto;
+        max-width: 100%;
+        margin: 0 0 88px 0;
+        padding: 0 24px;
     }
 
     .intro__box {
-        max-width: 720px;
+        max-width: 100%;
     }
 
     .photo-grid {
-        max-width: 720px;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 352px);
-        grid-template-rows: repeat(6, 264px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         row-gap: 16px;
         column-gap: 16px;
+        padding: 0 24px;
     }
     
     .photo-grid__item {
-        max-width: 352px;
+        max-width: 100%;
     }
 
     .places {
-        max-width: 720px;
+        /*max-width: 720px;*/
         margin: 0 auto 90px auto;
+        padding: 0 24px;
     }
 
     .place {
-        max-width: 720px;
+        /*max-width: 720px;*/
         display: grid;
         grid-template-columns: 340px 1fr;
-        grid-template-rows: 1fr 440px;
+        /*grid-template-rows: 1fr 440px;*/
         column-gap: 28px;
+        row-gap: 48px;
     }
 
     .place__image {
-        max-width: 340px;
+        max-width: 100%;
     }
 
     .place__title {
@@ -461,7 +467,7 @@
     }
     
     .place__paragraphs {
-        max-width: 352px;
+        max-width: 100%;
     }
     
     .place__paragraph {
@@ -476,7 +482,10 @@
     }
 
     .footer {
-        max-width: 720px;
+        max-width: 100%;
+        margin: 0;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
@@ -511,21 +520,24 @@
 
     .intro {
         max-width: 100%;
-        margin: 0 auto 74px auto;
+        margin: 0 0 74px 0;
+        padding: 0;
     }
 
     .intro__box {
-        max-width: 90%;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 20px;
     }
 
     .photo-grid {
-        max-width: 90%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
         gap: 14px;
-        margin: 0 auto 74px auto;
+        margin: 0 0 74px 0;
+        padding: 0 20px;
     }
     
     .photo-grid__item {
@@ -533,17 +545,18 @@
     }
 
     .places {
-        max-width: 100%;
+        /*max-width: 100%;*/
         margin: 0 auto 74px auto;
+        padding: 0;
     }
 
     .place {
-        max-width: 100%;
+       /*max-width: 100%;*/
         margin: 0 auto 50px auto;
         display: grid;
         grid-template-columns: 1fr;
-        /*grid-template-rows: 47px 46px 595px 1fr;*/
-        row-gap: 32px;
+        /*grid-template-rows: 47px 46px 580px 1fr;*/
+        gap: 32px;
     }
     
     .place:last-of-type {
@@ -553,12 +566,12 @@
     .place__title {
         font-size: 45px;
         line-height: 47px;
-        max-width: 100%;
+        /*max-width: 100%;*/
         padding-left: 20px;
     }
     
     .place__website {
-        max-width: 100%;
+        /*max-width: 100%;*/
         padding-left: 20px;
     }
     
@@ -567,8 +580,9 @@
     }
     
     .place__paragraphs {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
+        padding: 0 20px;
     }
     
     .place__paragraph {
@@ -602,6 +616,12 @@
 
     .nav-box__link:last-of-type {
         padding: 0 0 48px 0;
+    }
+
+    .footer {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 20px 24px 20px;
     }
 
     .footer__copyright {
@@ -639,14 +659,20 @@
         max-width: 100%;
     }
 
+    .lead__caption {
+        padding-left: 16px;
+    }
+
     .intro {
-        max-width: 90%;
-        margin: 0 auto 64px auto;
+        max-width: 100%;
+        margin: 0 0 64px 0;
+        padding: 0;
     }
 
     .intro__box {
-        max-width: 90%;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 16px;
     }
 
     .intro__title {
@@ -661,7 +687,9 @@
     }
 
     .photo-grid {
-        margin: 0 auto 64px auto;
+        max-width: 100%;
+        margin: 0 0 64px 0;
+        padding: 0 16px;
     }
 
     .places {
@@ -674,8 +702,8 @@
         margin: 0 auto 50px auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 39px 46px 425px 1fr;
-        row-gap: 40px;
+        /*grid-template-rows: 39px 46px 425px 1fr;*/
+        gap: 32px;
     }
     
     .place:last-of-type {
@@ -696,11 +724,13 @@
     
     .place__image {
         max-width: 100%;
+       /* margin: auto;*/
     }
     
     .place__paragraphs {
-        max-width: 90%;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 16px;
     }
     
     .place__paragraph {
@@ -718,13 +748,17 @@
         margin: 0 0 16px 0;
         font-size: 42px;
         line-height: 44px;
-        max-width: 350px;
+        max-width: 288px;
     }
     
     .cover__subtitle {
         font-size: 16px;
         line-height: 18px;
-        max-width: 350px;
+        max-width: 288px;
+    }
+
+    .footer {
+        padding: 0 16px 24px 16px;
     }
 
 
@@ -773,12 +807,14 @@
     }
 
     .intro {
-        max-width: 288px;
-        margin: 0 auto 64px auto;
+        max-width: 100%;
+        margin: 0 0 64px 0;
+        padding: 0 16px;
     }
 
     .intro__box {
-        max-width: 288px;
+        max-width: 100%;
+        padding: 0;
     }
 
     .intro__title {
@@ -793,30 +829,32 @@
     }
     
     .photo-grid {
-        max-width: 288px;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: 288px;
-        grid-template-rows: repeat(12, 216px);
-        row-gap: 12px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        gap: 12px;
         margin: 0 auto 64px auto;
+        padding: 0 16px;
     }
     
     .photo-grid__item {
-        max-width: 288px;
+        max-width: 100%;
     }
 
     .places {
-        max-width: 320px;
-        margin: 0 auto 66px auto;
+        /*max-width: 320px;*/
+
+        margin: 0 0 66px 0;
     }
 
     .place {
-        max-width: 320px;
+        max-width: 100%;
         margin: 0 auto 50px auto;
         display: grid;
-        grid-template-columns: 320px;
-        grid-template-rows: 35px 46px 320px 1fr;
-        row-gap: 32px;
+        grid-template-columns: 1fr;
+        /*grid-template-rows: 35px 46px 320px 1fr;*/
+        gap: 32px;
     }
     
     .place:last-of-type {
@@ -836,12 +874,13 @@
     }
     
     .place__image {
-        max-width: 320px;
+        max-width: 100%;
     }
     
     .place__paragraphs {
-        max-width: 288px;
+       /* max-width: 288px;*/
         margin: 0 auto;
+        padding-right: 16px;
     }
     
     .place__paragraph {
@@ -873,6 +912,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        margin: 0;
+        padding-left: 16px;
     }
 
     .nav-box {

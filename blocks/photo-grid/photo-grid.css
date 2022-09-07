@@ -33,7 +33,6 @@
 
 @media screen and (max-width: 767px) {
     .photo-grid {
-        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
@@ -45,7 +44,6 @@
 
 @media screen and (max-width: 580px) {
     .photo-grid {
-        max-width: 100%;
         margin: 0 0 64px 0;
         padding: 0 16px;
     }
@@ -53,12 +51,10 @@
 
 @media screen and (max-width: 425px) {
     .photo-grid {
-        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
         gap: 12px;
         margin: 0 auto 64px auto;
-        padding: 0 16px;
     }
 }

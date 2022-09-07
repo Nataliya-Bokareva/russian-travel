@@ -3,7 +3,7 @@
     padding-top: 28px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1184px;
 }
 
@@ -16,8 +16,9 @@
 
 @media screen and (max-width: 1023px) {
     .header {
-        max-width: 90%;
-        margin: 0 auto 48px auto;
+        max-width: 100%;
+        margin: 0 0 48px 0;
+        padding: 28px 24px 0 24px;
     }
 }
 
@@ -28,16 +29,8 @@
     }
 }
 
-@media screen and (max-width: 580px) {
-    .header {
-        max-width: 90%;
-        padding-top: 20px;
-    }
-}
-
 @media screen and (max-width: 425px) {
     .header {
-        max-width: 90%;
         padding-top: 16px;
     }
 }

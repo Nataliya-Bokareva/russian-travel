@@ -9,13 +9,14 @@
 
 @media screen and (max-width: 1279px) {
     .footer {
-        max-width: 90%;
+        max-width: 100%;
+        padding-left: 48px;
+        padding-right: 48px;
     }
 }
 
 @media screen and (max-width: 1023px) {
     .footer {
-        max-width: 100%;
         margin: 0;
         padding-left: 24px;
         padding-right: 24px;
@@ -24,12 +25,10 @@
 
 @media screen and (max-width: 767px) {
     .footer {
-        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 0;
         padding: 0 20px 24px 20px;
     }
 }
@@ -37,17 +36,5 @@
 @media screen and (max-width: 580px) {
     .footer {
         padding: 0 16px 24px 16px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .footer {
-        max-width: 288px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin: 0;
-        padding-left: 16px;
     }
 }

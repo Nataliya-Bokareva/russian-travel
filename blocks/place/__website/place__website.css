@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -15,7 +15,6 @@
 
 @media screen and (max-width: 580px) {
     .place__website {
-        max-width: 100%;
         padding-left: 16px;
     }
 }

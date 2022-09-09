@@ -16,18 +16,18 @@
 @media screen and (max-width: 1023px) {
     .lead {
         max-width: 100%;
-        margin: 0 auto 88px auto;
+        margin-bottom: 88px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .lead {
-        margin: 0 auto 74px auto;
+        margin-bottom: 74px;
     }
 }
 
 @media screen and (max-width: 580px) {
     .lead {
-        margin: 0 auto 64px auto;
+        margin-bottom: 64px;
     }
 }

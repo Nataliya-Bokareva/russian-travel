@@ -5,7 +5,8 @@
     line-height: 76px;
     color: #FFFFFF;
     margin: 0;
-    max-width: 50%;
+    max-width: 100%;
+    white-space: pre-line;
 }
 
 @media screen and (max-width: 1023px) {
@@ -20,6 +21,7 @@
         font-size: 45px;
         line-height: 47px;
         padding-left: 20px;
+        white-space: normal;
     }
 }
 
@@ -27,7 +29,6 @@
     .place__title {
         font-size: 37px;
         line-height: 39px;
-        max-width: 100%;
         padding-left: 16px;
     }
 }
